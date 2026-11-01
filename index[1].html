@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo Studio - passport photos, printing, photo editing and photography services.">
+  <title>Photo Studio | Photography & Printing</title>
+  <style>
+    :root{--ink:#172033;--muted:#667085;--brand:#7c3aed;--brand2:#5b21b6;--paper:#f7f7fb;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 15px #17203312}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}.logo{font-weight:800;font-size:1.25rem;color:var(--brand)}
+    nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.95rem}nav a:hover{color:var(--brand)}
+    .hero{background:linear-gradient(120deg,#21133e,#6335a8 60%,#9b72dc);color:white;padding:78px 0}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px}
+    .eyebrow{letter-spacing:2px;text-transform:uppercase;font-size:.78rem;color:#e6d9ff;font-weight:bold}
+    h1{font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.08;margin:12px 0 18px}
+    .hero p{font-size:1.1rem;color:#eee6ff;max-width:580px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{display:inline-block;padding:12px 20px;border-radius:9px;font-weight:bold;background:#fff;color:var(--brand2)}
+    .btn.outline{background:transparent;color:#fff;border:1px solid #ffffff99}
+    .hero-card{background:#ffffff18;border:1px solid #ffffff35;border-radius:22px;padding:28px;text-align:center;backdrop-filter:blur(5px)}
+    .camera{font-size:5rem}.hero-card strong{display:block;font-size:1.35rem}
+    section{padding:65px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 32px}.section-head h2{font-size:2rem;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:#fff;border-radius:15px;padding:23px;box-shadow:0 5px 22px #1720330b}
+    .card .emoji{font-size:2rem}.card h3{margin:12px 0 6px}.card p{color:var(--muted);font-size:.94rem;margin:0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery-item{min-height:190px;border-radius:15px;background:linear-gradient(135deg,#e9ddff,#d8e8ff);display:grid;place-items:center;text-align:center;padding:20px;color:#493274;font-weight:bold}
+    .price{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden}.price th,.price td{padding:14px 18px;text-align:left;border-bottom:1px solid #eee}.price th{background:#efe8fb;color:#49217d}
+    .contact{background:#21133e;color:white}.contact .section-head p{color:#ddd2f0}.contact-box{max-width:700px;margin:auto;background:#ffffff12;border:1px solid #ffffff25;border-radius:18px;padding:28px;text-align:center}
+    .contact-box p{color:#eee}.contact .btn{background:#25d366;color:#083b20}
+    footer{text-align:center;padding:22px;color:#777;font-size:.9rem}
+    @media(max-width:800px){.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}nav{gap:11px;font-size:.85rem}}
+    @media(max-width:520px){.nav{align-items:flex-start;flex-direction:column}.cards,.gallery{grid-template-columns:1fr}.hero{padding:55px 0}section{padding:48px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">📸 Photo Studio</a>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#prices">Price List</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Photography • Printing • Editing</div>
+        <h1>Every moment deserves a beautiful frame.</h1>
+        <p>Welcome to Photo Studio. We help you preserve your special moments and take care of your everyday photo and printing needs.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/919000338001?text=Hello%20Photo%20Studio%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn outline" href="#services">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-card"><div class="camera">📷</div><strong>Photo Studio</strong><span>Photography & Digital Services</span></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><h2>Our Services</h2><p>Photo and digital services in one place. Contact us for availability and rates.</p></div>
+      <div class="cards">
+        <article class="card"><div class="emoji">🪪</div><h3>Passport Photos</h3><p>Passport-size and ID photos for applications and documents.</p></article>
+        <article class="card"><div class="emoji">🖨️</div><h3>Photo Printing</h3><p>Print your favourite photos in different sizes.</p></article>
+        <article class="card"><div class="emoji">✨</div><h3>Photo Editing</h3><p>Photo touch-ups, background changes and enhancement.</p></article>
+        <article class="card"><div class="emoji">💍</div><h3>Events & Weddings</h3><p>Photography for celebrations and special occasions.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" style="background:#fff">
+    <div class="wrap">
+      <div class="section-head"><h2>Our Gallery</h2><p>Replace these sample tiles with your own studio photographs.</p></div>
+      <div class="gallery">
+        <div class="gallery-item">Your Photography Sample 1</div>
+        <div class="gallery-item">Your Photography Sample 2</div>
+        <div class="gallery-item">Your Photography Sample 3</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="wrap">
+      <div class="section-head"><h2>Price List</h2><p>Ask us on WhatsApp for current prices and custom requirements.</p></div>
+      <table class="price">
+        <thead><tr><th>Service</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Passport-size photos</td><td>Contact for price</td></tr>
+          <tr><td>Photo prints</td><td>Contact for price</td></tr>
+          <tr><td>Photo editing</td><td>Contact for price</td></tr>
+          <tr><td>Event photography</td><td>Contact for price</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><h2>Contact Photo Studio</h2><p>Have a question or want to book a service? Send us a WhatsApp message.</p></div>
+      <div class="contact-box">
+        <h3>We are happy to help!</h3>
+        <p>WhatsApp / Mobile: <strong>9000338001</strong></p>
+        <a class="btn" href="https://wa.me/919000338001?text=Hello%20Photo%20Studio%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <p style="font-size:.85rem;margin-top:18px">Add your studio address and opening hours here after publishing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© <span id="year"></span> Photo Studio. All rights reserved.</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
